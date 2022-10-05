@@ -6,14 +6,17 @@
 
 float f(float x) {
     float y;
-
+/*
     float L = 5;
     float t = 0.05;
     float C = 0.0001;
 
 
-    y = x / exp(R*t) * cos(sqrt(1/(5*C) - pow(R/(2*L), 2)) * t);
-    
+    y = f(0) / exp(R*t/(2*L)) * cos(sqrt(1/(L*C) - pow(R/(2*L), 2)) * t);
+*/
+
+    y = x/2 - 1;
+
     return y;
 }
 
