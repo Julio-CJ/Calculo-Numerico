@@ -1,8 +1,5 @@
 #include "Metodos.h"
 
-#include <stdlib.h>
-#include <stdio.h>
-
 void bisseccao(float a, float b, float erro, int imax, funcao f) {
     if(f(a) * f(b) < 0) {
         float c;
