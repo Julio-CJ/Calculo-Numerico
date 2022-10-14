@@ -5,7 +5,7 @@ metodos:
 	@echo "|           METODOS           |"
 	@echo "==============================="
 	@echo "Compilando os metodos. Programa metodos"
-	gcc Metodos.h Metodos.c main.c -o metodos
+	gcc Metodos.h Metodos.c main.c -o metodos -lm
 	chmod +x metodos
 clean:
 	@echo " "
