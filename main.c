@@ -32,7 +32,6 @@ int main () {
 
         switch ( opc ) {
             case 1 :
-                
 
                 printf("Digite o valor de a: ");
                 scanf("%f", &a);
