@@ -3,9 +3,11 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 typedef float (*funcao)(float);
 
-void bisseccao(float a, float b, float erro, int imax, funcao f);
+void bisseccao(double a, double b, float erro, int imax, funcao f);
+void newton(float a, float erro, int imax, funcao f, funcao df);
 
 #endif

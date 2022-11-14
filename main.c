@@ -13,8 +13,8 @@ float f(float x) {
     float C = 0.0001;
     float qq0 = 0.01;
 
-    y = 1 / exp(R*t/(2*L)) * cos(sqrt(1/(L*C) - pow(R/(2*L), 2)) * t) - qq0;
-
+    y = exp(-1*(R*t/(2*L))) * cos(sqrt(1/(L*C) - pow(R/(2*L), 2)) * t) - qq0;
+    
     return y;
 }
 
@@ -28,22 +28,23 @@ int main () {
         printf("(0) - Sair.\n");
         scanf("%d", &opc);
         int imax;
-        float a, b, erro;
+        float erro;
+        double a, b;
 
         switch ( opc ) {
             case 1 :
 
                 printf("Digite o valor de a: ");
-                scanf("%f", &a);
+                scanf("%lf", &a);
                 printf("Digite o valor de b: ");
-                scanf("%f", &b);
+                scanf("%lf", &b);
                 printf("Digite o valor do erro: ");
                 scanf("%f", &erro);
                 printf("Digite o valor maximo de iteracoes imax: ");
                 scanf("%d", &imax);
 
-                printf("O valor de a: %f\n", a);
-                printf("O valor de b: %f\n", b);
+                printf("O valor de a: %lf\n", a);
+                printf("O valor de b: %lf\n", b);
                 printf("O valor de erro: %f\n", erro);
                 printf("O valor maximo de iteracoes imax: %d\n", imax);
 
