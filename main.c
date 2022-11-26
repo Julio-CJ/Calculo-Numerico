@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
+//definição da função f(x)
 float f(float x) {
     float y;
 
@@ -22,32 +22,36 @@ int main () {
     int opc = 0;
 
     do {
+        //menu
         printf("\n");
         printf("Escolha uma opção: \n");
         printf("(1) - Usar método;\n");
         printf("(0) - Sair.\n");
         scanf("%d", &opc);
+        //definindo as variaves
         int imax;
         float erro;
         double a, b;
 
         switch ( opc ) {
             case 1 :
-
+                //escolher o intervalo
                 printf("Digite o valor de a: ");
                 scanf("%lf", &a);
                 printf("Digite o valor de b: ");
                 scanf("%lf", &b);
+                //escolher o erro
                 printf("Digite o valor do erro: ");
                 scanf("%f", &erro);
+                //escolher o maximo de iterações
                 printf("Digite o valor maximo de iteracoes imax: ");
                 scanf("%d", &imax);
-
+                //conferindo os valores dados
                 printf("O valor de a: %lf\n", a);
                 printf("O valor de b: %lf\n", b);
                 printf("O valor de erro: %f\n", erro);
                 printf("O valor maximo de iteracoes imax: %d\n", imax);
-
+                //chama o metodo e fornece as variaveis
                 bisseccao(a, b, erro, imax, f);
                 break;
             case 0 :
