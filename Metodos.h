@@ -5,9 +5,14 @@
 #include <stdio.h>
 #include <math.h>
 
+#define MAX 10
+
 typedef float (*funcao)(float);
 
-void bisseccao(double a, double b, float erro, int imax, funcao f);
-void newton(float a, float erro, int imax, funcao f, funcao df);
+void bisseccao(float a, float b, float erro, funcao f);
+
+void newton_raphson(float a, float erro, funcao f, funcao df);
+
+int gauss_seidel(float m[MAX][MAX], float b[MAX], float x[MAX], int n, float erro);
 
 #endif
